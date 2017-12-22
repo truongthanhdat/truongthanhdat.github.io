@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CUDA and CuDNN Installation Tutorial - Ubuntu 16 – Thanh-Dat Truong – Researcher in Computer Vision, Machine Learning and Deep Learning</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Download
+
+" />
+    <meta property="og:description" content="Download
+
+" />
+    
+    <meta name="author" content="Thanh-Dat Truong" />
+
+    
+    <meta property="og:title" content="CUDA and CuDNN Installation Tutorial - Ubuntu 16" />
+    <meta property="twitter:title" content="CUDA and CuDNN Installation Tutorial - Ubuntu 16" />
+    
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Thanh-Dat Truong - Researcher in Computer Vision, Machine Learning and Deep Learning" href="/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="https://avatars3.githubusercontent.com/u/13172390?s=460&v=4" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Thanh-Dat Truong</a></h1>
+            <p class="site-description">Researcher in Computer Vision, Machine Learning and Deep Learning</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>CUDA and CuDNN Installation Tutorial - Ubuntu 16</h1>
+
+  <div class="entry" align="justify">
+    <h2 id="download">Download</h2>
+
+<p>You need to download CUDA and CuDNN in the main page:</p>
+
+<ul>
+  <li>
+    <p><a href="https://developer.nvidia.com/cuda-downloads">CUDA</a>. You need to download a local deb file.</p>
+  </li>
+  <li>
+    <p><a href="https://developer.nvidia.com/cudnn">CuDNN</a></p>
+  </li>
+</ul>
+
+<h2 id="install">Install</h2>
+
+<h3 id="install-cuda">Install CUDA</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>dpkg <span class="nt">-i</span> &lt;file-cuda-install.dep&gt;
+<span class="nb">sudo </span>apt-key add  /var/cuda-repo-&lt;version&gt;/7fa2af80.pub
+<span class="nb">sudo </span>apt-get update
+<span class="nb">sudo </span>apt-get install cuda
+</code></pre></div></div>
+
+<p>The second command uses when you install CUDA version &gt;= 9.0.</p>
+
+<p>You need to add PATH and LD_LIBRARY_PATH into the os enviroment. Edit .bashrc and add 2 lines:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/usr/local/cuda-&lt;version&gt;/bin
+<span class="nb">export </span><span class="nv">LD_LIBRARY_PATH</span><span class="o">=</span><span class="nv">$LD_LIBRARY_PATH</span>:/usr/local/cuda-&lt;version&gt;/lib64 <span class="o">(</span>or lib <span class="k">if </span>you use 32bit<span class="o">)</span>
+</code></pre></div></div>
+
+<p>Finally, you type source .bashrc and reboot your pc.</p>
+
+<h3 id="install-cudnn">Install CuDNN</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">tar</span> <span class="nt">-xzvf</span> &lt;fill-cudnn.tgz&gt;
+<span class="nb">sudo </span>cp cuda/include/cudnn.h /usr/local/cuda-&lt;version&gt;/include/
+<span class="nb">sudo </span>cp cuda/lib64/libcudnn<span class="k">*</span> /usr/local/cuda-&lt;version&gt;/lib64/
+<span class="nb">sudo </span>chmod a+r /usr/local/cuda-&lt;version&gt;/include/cudnn.h /usr/loca/cuda-&lt;version&gt;/lib64/libcudnn<span class="k">*</span>
+</code></pre></div></div>
+
+<h2 id="notes">Notes</h2>
+
+<ul>
+  <li>
+    <p>You should try to install one version CUDA on your PC. It can be conflicted between CUDA versions and NVIDIA Card Driver.</p>
+  </li>
+  <li>
+    <p>Before installing CUDA, you should try to purge remove NVIDIA Card Driver to avoid conflicting.</p>
+  </li>
+  <li>
+    <p>When you use CUDA for training, you may not login your ubuntu into desktop in next login. To deal with the problem, you login into tty and purge remove CUDA and its dependencies. After, you login into your desktop and reinstall CUDA and CuDNN.</p>
+  </li>
+</ul>
+
+  </div>
+
+  <div class="date">
+    Written on December 16, 2017
+  </div>
+
+  
+</article>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:thanhdattrg@gmail.com"><i class="svg-icon email"></i></a>
+<a href="https://www.facebook.com/thanhdat.trg"><i class="svg-icon facebook"></i></a>
+
+<a href="https://github.com/truongthanhdat/truongthanhdat.github.io"><i class="svg-icon github"></i></a>
+
+
+
+
+<a href="https://www.twitter.com/thanhdattrg"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>
