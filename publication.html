@@ -145,8 +145,10 @@
 					<div class="pageheader">
 						<div class="headercontent">
 							<div class="section-container">
-								<h2 class="title">Publications - 
-								<a href="https://scholar.google.com/citations?hl=en&user=qrmxykkAAAAJ">Google Scholar</a></h2>
+								<h2 class="title">Publications -
+									<a href="https://scholar.google.com/citations?hl=en&user=qrmxykkAAAAJ">Google
+										Scholar</a>
+								</h2>
 							</div>
 						</div>
 					</div>
@@ -178,7 +180,7 @@
 								<div class="col-md-12">
 									<div class="pitems">
 										<h2>2023</h2>
-										
+
 										<div class="item mix cpaper" data-year="2023">
 											<div class="pubmain">
 												<div class="pubassets">
@@ -186,33 +188,41 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">LIAAD: Lightweight Attentive Angular Distillation for Large-scale Age-Invariant Face Recognition</h4>
+												<h4 class="pubtitle">CROVIA: Seeing Drone Scenes from Car Perspective
+													via Cross-View Adaptation</h4>
 												<div class="pubauthor">
-													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, Kha Gia Quach, Ngan Le, Tien D Bui, and Khoa Luu.
+													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, Ashley Dowling,
+													Son Lam Phung, Jackson Cothren, and Khoa Luu
 												</div>
 												<div class="pubcite">
-													<span class="label label-success">Journal Paper</span>
-													Neurocomputing (Impact Factor: 5.779).
-													 
+													<span class="label label-success">Preprint</span>
+													arXiv, 2023.
+
 												</div>
 											</div>
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													Disentangled representations have been commonly adopted to Age-invariant Face Recognition (AiFR) tasks.
-													 However, these methods have reached some limitations with (1) the requirement of large-scale face recognition
-													  (FR) training data with age labels, which is limited in practice; (2) heavy deep network architectures for high performance;
-													   and (3) their evaluations are usually taken place on age-related face databases while neglecting the standard large-scale FR databases 
-													   to guarantee robustness. This work presents a novel Lightweight Attentive Angular Distillation (LIAAD) approach to Large-scale
-													    Lightweight AiFR that overcomes these limitations. Given two high-performance heavy networks as teachers with different specialized knowledge,
-														 LIAAD introduces a learning paradigm to efficiently distill the age-invariant attentive and angular knowledge from those teachers to 
-														 a lightweight student network making it more powerful with higher FR accuracy and robust against age factor. 
-														 Consequently, LIAAD approach is able to take the advantages of both FR datasets with and without age labels to train an AiFR model. 
-														 Far apart from prior distillation methods mainly focusing on accuracy and compression ratios in closed-set problems, 
-														 our LIAAD aims to solve the open-set problem, i.e. large-scale face recognition. Evaluations on LFW, IJB-B and IJB-C Janus, AgeDB and MegaFace-FGNet 
-														 with one million distractors have demonstrated the efficiency of the proposed approach on light-weight structure. 
-														 This work also presents a new longitudinal face aging (LogiFace) database \footnote{This database will be made available} 
-														 for further studies in age-related facial problems in future.
+													Understanding semantic scene segmentation of urban scenes captured
+													from the Unmanned Aerial Vehicles (UAV) perspective plays a vital
+													role in building a perception model for UAV. With the limitations of
+													large-scale densely labeled data, semantic scene segmentation for
+													UAV views requires a broad understanding of an object from both its
+													top and side views. Adapting from well-annotated autonomous driving
+													data to unlabeled UAV data is challenging due to the cross-view
+													differences between the two data types. Our work proposes a novel
+													Cross-View Adaptation (CROVIA) approach to effectively adapt the
+													knowledge learned from on-road vehicle views to UAV views. First, a
+													novel geometry-based constraint to cross-view adaptation is
+													introduced based on the geometry correlation between views. Second,
+													cross-view correlations from image space are effectively transferred
+													to segmentation space without any requirement of paired on-road and
+													UAV view data via a new Geometry-Constraint Cross-View (GeiCo) loss.
+													Third, the multi-modal bijective networks are introduced to enforce
+													the global structural modeling across views. Experimental results on
+													new cross-view adaptation benchmarks introduced in this work, i.e.,
+													SYNTHIA to UAVID and GTA5 to UAVID, show the State-of-the-Art (SOTA)
+													performance of our approach over prior adaptation methods.
 												</p>
 											</div>
 										</div>
@@ -224,31 +234,151 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">FREDOM: Fairness Domain Adaptation Approach to Semantic Scene Understanding</h4>
+												<h4 class="pubtitle">CoMaL: Conditional Maximum Likelihood Approach to
+													Self-supervised Domain Adaptation in Long-tail Semantic Segmentation
+												</h4>
 												<div class="pubauthor">
-													<strong>Thanh-Dat Truong</strong>, Ngan Le, Bhiksha Raj, Jackson Cothren, and Khoa Luu.
+													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, Pierce Helton,
+													Ashley Dowling, Xin Li, and Khoa Luu
 												</div>
 												<div class="pubcite">
-													<span class="label label-success">Conference Paper</span>
-													The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2023.
-													 
+													<span class="label label-success">Preprint</span>
+													arXiv, 2023.
+
 												</div>
 											</div>
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													Although Domain Adaptation in Semantic Scene Segmentation has shown impressive improvement in recent years, 
-													the fairness concerns in the domain adaptation have yet to be well defined and addressed. 
-													In addition, fairness is one of the most critical aspects when deploying the segmentation models 
-													into human-related real-world applications, e.g., autonomous driving, as any unfair predictions could influence human safety. 
-													In this paper, we propose a novel Fairness Domain Adaptation (FREDOM) approach to semantic scene segmentation. 
-													In particular, from the proposed formulated fairness objective, a new adaptation framework will be introduced based 
-													on the fair treatment of class distributions. Moreover, to generally model the context of structural dependency, 
-													a new conditional structural constraint is introduced to impose the consistency of predicted segmentation. 
-													Thanks to the proposed Conditional Structure Network, the self-attention mechanism has sufficiently modeled 
-													the structural information of segmentation. Through the ablation studies, the proposed method has shown the performance improvement 
-													of the segmentation models and promoted fairness in the model predictions. The experimental results on the two standard benchmarks, 
-													i.e., SYNTHIA to Cityscapes and GTA5 to Cityscapes, have shown that our method achieved State-of-the-Art (SOTA) performance.
+													The research in self-supervised domain adaptation in semantic
+													segmentation has recently received considerable attention. Although
+													GAN-based methods have become one of the most popular approaches to
+													domain adaptation, they have suffered from some limitations. They
+													are insufficient to model both global and local structures of a
+													given image, especially in small regions of tail classes. Moreover,
+													they perform bad on the tail classes containing limited number of
+													pixels or less training samples. In order to address these issues,
+													we present a new self-supervised domain adaptation approach to
+													tackle long-tail semantic segmentation in this paper. Firstly, a new
+													metric is introduced to formulate long-tail domain adaptation in the
+													segmentation problem. Secondly, a new Conditional Maximum Likelihood
+													(CoMaL) approach in an autoregressive framework is presented to
+													solve the problem of long-tail domain adaptation. Although other
+													segmentation methods work under the pixel independence assumption,
+													the long-tailed pixel distributions in CoMaL are generally solved in
+													the context of structural dependency, as that is more realistic.
+													Finally, the proposed method is evaluated on popular large-scale
+													semantic segmentation benchmarks, i.e., "SYNTHIA to Cityscapes" and
+													"GTA to Cityscapes", and outperforms the prior methods by a large
+													margin in both the standard and the proposed evaluation protocols.
+												</p>
+											</div>
+										</div>
+
+										<div class="item mix cpaper" data-year="2023">
+											<div class="pubmain">
+												<div class="pubassets">
+													<a href="#" class="pubcollapse">
+														<i class="fa fa-expand"></i>
+													</a>
+												</div>
+												<h4 class="pubtitle">LIAAD: Lightweight Attentive Angular Distillation
+													for Large-scale Age-Invariant Face Recognition</h4>
+												<div class="pubauthor">
+													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, Kha Gia Quach,
+													Ngan Le, Tien D Bui, and Khoa Luu.
+												</div>
+												<div class="pubcite">
+													<span class="label label-success">Journal Paper</span>
+													Neurocomputing (Impact Factor: 5.779).
+
+												</div>
+											</div>
+											<div class="pubdetails">
+												<h4>Abstract</h4>
+												<p>
+													Disentangled representations have been commonly adopted to
+													Age-invariant Face Recognition (AiFR) tasks.
+													However, these methods have reached some limitations with (1) the
+													requirement of large-scale face recognition
+													(FR) training data with age labels, which is limited in practice;
+													(2) heavy deep network architectures for high performance;
+													and (3) their evaluations are usually taken place on age-related
+													face databases while neglecting the standard large-scale FR
+													databases
+													to guarantee robustness. This work presents a novel Lightweight
+													Attentive Angular Distillation (LIAAD) approach to Large-scale
+													Lightweight AiFR that overcomes these limitations. Given two
+													high-performance heavy networks as teachers with different
+													specialized knowledge,
+													LIAAD introduces a learning paradigm to efficiently distill the
+													age-invariant attentive and angular knowledge from those teachers to
+													a lightweight student network making it more powerful with higher FR
+													accuracy and robust against age factor.
+													Consequently, LIAAD approach is able to take the advantages of both
+													FR datasets with and without age labels to train an AiFR model.
+													Far apart from prior distillation methods mainly focusing on
+													accuracy and compression ratios in closed-set problems,
+													our LIAAD aims to solve the open-set problem, i.e. large-scale face
+													recognition. Evaluations on LFW, IJB-B and IJB-C Janus, AgeDB and
+													MegaFace-FGNet
+													with one million distractors have demonstrated the efficiency of the
+													proposed approach on light-weight structure.
+													This work also presents a new longitudinal face aging (LogiFace)
+													database \footnote{This database will be made available}
+													for further studies in age-related facial problems in future.
+												</p>
+											</div>
+										</div>
+
+										<div class="item mix cpaper" data-year="2023">
+											<div class="pubmain">
+												<div class="pubassets">
+													<a href="#" class="pubcollapse">
+														<i class="fa fa-expand"></i>
+													</a>
+												</div>
+												<h4 class="pubtitle">FREDOM: Fairness Domain Adaptation Approach to
+													Semantic Scene Understanding</h4>
+												<div class="pubauthor">
+													<strong>Thanh-Dat Truong</strong>, Ngan Le, Bhiksha Raj, Jackson
+													Cothren, and Khoa Luu.
+												</div>
+												<div class="pubcite">
+													<span class="label label-success">Conference Paper</span>
+													The IEEE/CVF Conference on Computer Vision and Pattern Recognition
+													(CVPR) 2023.
+
+												</div>
+											</div>
+											<div class="pubdetails">
+												<h4>Abstract</h4>
+												<p>
+													Although Domain Adaptation in Semantic Scene Segmentation has shown
+													impressive improvement in recent years,
+													the fairness concerns in the domain adaptation have yet to be well
+													defined and addressed.
+													In addition, fairness is one of the most critical aspects when
+													deploying the segmentation models
+													into human-related real-world applications, e.g., autonomous
+													driving, as any unfair predictions could influence human safety.
+													In this paper, we propose a novel Fairness Domain Adaptation
+													(FREDOM) approach to semantic scene segmentation.
+													In particular, from the proposed formulated fairness objective, a
+													new adaptation framework will be introduced based
+													on the fair treatment of class distributions. Moreover, to generally
+													model the context of structural dependency,
+													a new conditional structural constraint is introduced to impose the
+													consistency of predicted segmentation.
+													Thanks to the proposed Conditional Structure Network, the
+													self-attention mechanism has sufficiently modeled
+													the structural information of segmentation. Through the ablation
+													studies, the proposed method has shown the performance improvement
+													of the segmentation models and promoted fairness in the model
+													predictions. The experimental results on the two standard
+													benchmarks,
+													i.e., SYNTHIA to Cityscapes and GTA5 to Cityscapes, have shown that
+													our method achieved State-of-the-Art (SOTA) performance.
 												</p>
 											</div>
 										</div>
@@ -263,34 +393,47 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">CONDA: Continual Unsupervised Domain Adaptation Learning in Visual Perception for Self-Driving Cars</h4>
+												<h4 class="pubtitle">CONDA: Continual Unsupervised Domain Adaptation
+													Learning in Visual Perception for Self-Driving Cars</h4>
 												<div class="pubauthor">
-													<strong>Thanh-Dat Truong</strong>, Pierce Helton, Ahmed Moustafa, Jackson David Cothren, and Khoa Luu.
+													<strong>Thanh-Dat Truong</strong>, Pierce Helton, Ahmed Moustafa,
+													Jackson David Cothren, and Khoa Luu.
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Preprint</span>
 													arXiv, 2022.
-													 
+
 												</div>
 											</div>
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													Although unsupervised domain adaptation methods have achieved remarkable performance in semantic scene segmentation 
-													in visual perception for self-driving cars, these approaches remain impractical in real-world use cases. 
-													In practice, the segmentation models may encounter new data that have not been seen yet. 
-													Also, the previous data training of segmentation models may be inaccessible due to privacy problems. 
-													Therefore, to address these problems, in this work, we propose a Continual Unsupervised Domain Adaptation 
-													(CONDA) approach that allows the model to continuously learn and adapt with respect to the presence of the new data. 
-													Moreover, our proposed approach is designed without the requirement of accessing previous training data. 
-													To avoid the catastrophic forgetting problem and maintain the performance of the segmentation models, 
-													we present a novel Bijective Maximum Likelihood loss to impose the constraint of predicted segmentation distribution shifts. 
-													The experimental results on the benchmark of continual unsupervised domain adaptation have shown the advanced performance of the proposed CONDA method.
+													Although unsupervised domain adaptation methods have achieved
+													remarkable performance in semantic scene segmentation
+													in visual perception for self-driving cars, these approaches remain
+													impractical in real-world use cases.
+													In practice, the segmentation models may encounter new data that
+													have not been seen yet.
+													Also, the previous data training of segmentation models may be
+													inaccessible due to privacy problems.
+													Therefore, to address these problems, in this work, we propose a
+													Continual Unsupervised Domain Adaptation
+													(CONDA) approach that allows the model to continuously learn and
+													adapt with respect to the presence of the new data.
+													Moreover, our proposed approach is designed without the requirement
+													of accessing previous training data.
+													To avoid the catastrophic forgetting problem and maintain the
+													performance of the segmentation models,
+													we present a novel Bijective Maximum Likelihood loss to impose the
+													constraint of predicted segmentation distribution shifts.
+													The experimental results on the benchmark of continual unsupervised
+													domain adaptation have shown the advanced performance of the
+													proposed CONDA method.
 												</p>
 											</div>
 										</div>
 
-										
+
 
 										<div class="item mix cpaper" data-year="2022">
 											<div class="pubmain">
@@ -299,36 +442,50 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">Vec2Face-v2: Unveil Human Faces from their Blackbox Features via Attention-based Network in Face Recognition</h4>
+												<h4 class="pubtitle">Vec2Face-v2: Unveil Human Faces from their Blackbox
+													Features via Attention-based Network in Face Recognition</h4>
 												<div class="pubauthor">
-													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, Ngan Le, Marios Savvides, and Khoa Luu.
+													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, Ngan Le, Marios
+													Savvides, and Khoa Luu.
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Preprint</span>
 													arXiv, 2022.
-													 
+
 												</div>
 											</div>
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													In this work, we investigate the problem of face reconstruction given a facial feature representation extracted 
-													from a blackbox face recognition engine. Indeed, it is very challenging problem in practice due to the limitations
-													 of abstracted information from the engine. We therefore introduce a new method named Attention-based Bijective 
-													 Generative Adversarial Networks in a Distillation framework (DAB-GAN) to synthesize faces of a subject given his/her
-													  extracted face recognition features. Given any unconstrained unseen facial features of a subject, the DAB-GAN can
-													   reconstruct his/her faces in high definition. The DAB-GAN method includes a novel attention-based generative structure 
-													   with the new defined Bijective Metrics Learning approach. The framework starts by introducing a bijective metric so that 
-													   the distance measurement and metric learning process can be directly adopted in image domain for an image reconstruction task. 
-													   The information from the blackbox face recognition engine will be optimally exploited using the global distillation process. 
-													   Then an attention-based generator is presented for a highly robust generator to synthesize realistic faces with ID preservation. 
-													   We have evaluated our method on the challenging face recognition databases, i.e. CelebA, LFW, AgeDB, CFP-FP, and consistently 
-													   achieved the state-of-the-art results. The advancement of DAB-GAN is also proven on both image realism and ID preservation properties.
+													In this work, we investigate the problem of face reconstruction
+													given a facial feature representation extracted
+													from a blackbox face recognition engine. Indeed, it is very
+													challenging problem in practice due to the limitations
+													of abstracted information from the engine. We therefore introduce a
+													new method named Attention-based Bijective
+													Generative Adversarial Networks in a Distillation framework
+													(DAB-GAN) to synthesize faces of a subject given his/her
+													extracted face recognition features. Given any unconstrained unseen
+													facial features of a subject, the DAB-GAN can
+													reconstruct his/her faces in high definition. The DAB-GAN method
+													includes a novel attention-based generative structure
+													with the new defined Bijective Metrics Learning approach. The
+													framework starts by introducing a bijective metric so that
+													the distance measurement and metric learning process can be directly
+													adopted in image domain for an image reconstruction task.
+													The information from the blackbox face recognition engine will be
+													optimally exploited using the global distillation process.
+													Then an attention-based generator is presented for a highly robust
+													generator to synthesize realistic faces with ID preservation.
+													We have evaluated our method on the challenging face recognition
+													databases, i.e. CelebA, LFW, AgeDB, CFP-FP, and consistently
+													achieved the state-of-the-art results. The advancement of DAB-GAN is
+													also proven on both image realism and ID preservation properties.
 												</p>
 											</div>
 										</div>
 
-										
+
 										<div class="item mix cpaper" data-year="2022">
 											<div class="pubmain">
 												<div class="pubassets">
@@ -336,26 +493,38 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">Self-supervised Domain Adaptation in Crowd Counting</h4>
+												<h4 class="pubtitle">Self-supervised Domain Adaptation in Crowd Counting
+												</h4>
 												<div class="pubauthor">
-													Anh Pha Nguyen, <strong>Thanh-Dat Truong</strong>, Miaoqing Huang, Yi Liang, Ngan Le, and Khoa Luu.
+													Anh Pha Nguyen, <strong>Thanh-Dat Truong</strong>, Miaoqing Huang,
+													Yi Liang, Ngan Le, and Khoa Luu.
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Conference Paper</span>
 													The IEEE International Conference on Image Processing (ICIP), 2022.
-													 
+
 												</div>
 											</div>
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													Self-training crowd counting has not been attentively explored though it is one of the important challenges in computer vision. 
-													In practice, the fully supervised methods usually require an intensive resource of manual annotation. In order to address this challenge, 
-													this work introduces a new approach to utilize existing datasets with ground truth to produce more robust predictions on unlabeled datasets, 
-													named domain adaptation, in crowd counting. While the network is trained with labeled data, samples without labels from the target domain are
-													 also added to the training process. In this process, the entropy map is computed and minimized in addition to the adversarial training process 
-													 designed in parallel. Experiments on Shanghaitech, UCF_CC_50, and UCF-QNRF datasets prove a more generalized improvement of our method 
-													 over the other state-of-the-arts in the cross-domain setting.
+													Self-training crowd counting has not been attentively explored
+													though it is one of the important challenges in computer vision.
+													In practice, the fully supervised methods usually require an
+													intensive resource of manual annotation. In order to address this
+													challenge,
+													this work introduces a new approach to utilize existing datasets
+													with ground truth to produce more robust predictions on unlabeled
+													datasets,
+													named domain adaptation, in crowd counting. While the network is
+													trained with labeled data, samples without labels from the target
+													domain are
+													also added to the training process. In this process, the entropy map
+													is computed and minimized in addition to the adversarial training
+													process
+													designed in parallel. Experiments on Shanghaitech, UCF_CC_50, and
+													UCF-QNRF datasets prove a more generalized improvement of our method
+													over the other state-of-the-arts in the cross-domain setting.
 												</p>
 											</div>
 										</div>
@@ -367,31 +536,41 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">OTAdapt: Optimal Transport-based Approach For Unsupervised Domain Adaptation</h4>
+												<h4 class="pubtitle">OTAdapt: Optimal Transport-based Approach For
+													Unsupervised Domain Adaptation</h4>
 												<div class="pubauthor">
-													<strong>Thanh-Dat Truong</strong>, Naga Venkata Sai Raviteja Chappa, Xuan Bac Nguyen, Ngan Le, Ashley Dowling, and
+													<strong>Thanh-Dat Truong</strong>, Naga Venkata Sai Raviteja Chappa,
+													Xuan Bac Nguyen, Ngan Le, Ashley Dowling, and
 													Khoa Luu.
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Conference Paper</span>
 													The International Conference on Pattern Recognition (ICPR), 2022.
-													 
+
 												</div>
 											</div>
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													Unsupervised domain adaptation is one of the challenging problems in computer vision.
-													This paper presents a novel approach to unsupervised domain adaptations based on the optimal transport-based distance. 
-													Our approach allows aligning target and source domains without the requirement of meaningful metrics across domains. 
-													In addition, the proposal can associate the correct mapping between source and target domains and guarantee a constraint 
+													Unsupervised domain adaptation is one of the challenging problems in
+													computer vision.
+													This paper presents a novel approach to unsupervised domain
+													adaptations based on the optimal transport-based distance.
+													Our approach allows aligning target and source domains without the
+													requirement of meaningful metrics across domains.
+													In addition, the proposal can associate the correct mapping between
+													source and target domains and guarantee a constraint
 													of topology between source and target domains.
-													The proposed method is evaluated on different datasets in various problems, 
-													i.e. (i) digit recognition on MNIST, MNIST-M, USPS datasets, 
-													(ii) Object recognition on Amazon, Webcam, DSLR, and VisDA datasets, 
+													The proposed method is evaluated on different datasets in various
+													problems,
+													i.e. (i) digit recognition on MNIST, MNIST-M, USPS datasets,
+													(ii) Object recognition on Amazon, Webcam, DSLR, and VisDA datasets,
 													(iii) Insect Recognition on the IP102 dataset.
-													The experimental results show that our proposed method consistently improves performance accuracy. 
-													Also, our framework could be incorporated with any other CNN frameworks within an end-to-end deep network design for recognition problems to improve their performance.
+													The experimental results show that our proposed method consistently
+													improves performance accuracy.
+													Also, our framework could be incorporated with any other CNN
+													frameworks within an end-to-end deep network design for recognition
+													problems to improve their performance.
 												</p>
 											</div>
 										</div>
@@ -403,31 +582,48 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">DirecFormer: A Directed Attention in Transformer Approach to Robust Action Recognition</h4>
+												<h4 class="pubtitle">DirecFormer: A Directed Attention in Transformer
+													Approach to Robust Action Recognition</h4>
 												<div class="pubauthor">
-													<strong>Thanh-Dat Truong</strong>, Quoc-Huy Bui, Chi Nhan Duong, Han-Seok Seo, Son Lam Phung, Xin Li, 
+													<strong>Thanh-Dat Truong</strong>, Quoc-Huy Bui, Chi Nhan Duong,
+													Han-Seok Seo, Son Lam Phung, Xin Li,
 													and Khoa Luu
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Conference Paper</span>
-													The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2022
-													 
+													The IEEE/CVF Conference on Computer Vision and Pattern Recognition
+													(CVPR) 2022
+
 												</div>
 											</div>
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													Human action recognition has recently become one of the popular research topics in the computer vision community. 
-													Various 3D-CNN based methods have been presented to tackle both the spatial and temporal dimensions in the task 
-													of video action recognition with competitive results. However, these methods have suffered some fundamental 
-													limitations such as lack of robustness and generalization, e.g., how does the temporal ordering of video frames affect the recognition results?
-													This work presents a novel end-to-end Transformer-based Directed Attention (DirecFormer) framework for robust action recognition. 
-													The method takes a simple but novel perspective of Transformer-based approach to understand the right order of sequence actions.  
-													Therefore, the contributions of this work are three-fold. Firstly, we introduce the problem of ordered temporal learning issues to the action recognition problem. 
-													Secondly, a new Directed Attention mechanism is introduced to understand and provide attentions to human actions in the right order. 
-													Thirdly, we introduce the conditional dependency in action sequence modeling that includes orders and classes. 
-													The proposed approach consistently achieves the state-of-the-art (SOTA) results compared with the recent action recognition methods, 
-													on three standard large-scale benchmarks, i.e. Jester, Kinetics-400 and Something-Something-V2.
+													Human action recognition has recently become one of the popular
+													research topics in the computer vision community.
+													Various 3D-CNN based methods have been presented to tackle both the
+													spatial and temporal dimensions in the task
+													of video action recognition with competitive results. However, these
+													methods have suffered some fundamental
+													limitations such as lack of robustness and generalization, e.g., how
+													does the temporal ordering of video frames affect the recognition
+													results?
+													This work presents a novel end-to-end Transformer-based Directed
+													Attention (DirecFormer) framework for robust action recognition.
+													The method takes a simple but novel perspective of Transformer-based
+													approach to understand the right order of sequence actions.
+													Therefore, the contributions of this work are three-fold. Firstly,
+													we introduce the problem of ordered temporal learning issues to the
+													action recognition problem.
+													Secondly, a new Directed Attention mechanism is introduced to
+													understand and provide attentions to human actions in the right
+													order.
+													Thirdly, we introduce the conditional dependency in action sequence
+													modeling that includes orders and classes.
+													The proposed approach consistently achieves the state-of-the-art
+													(SOTA) results compared with the recent action recognition methods,
+													on three standard large-scale benchmarks, i.e. Jester, Kinetics-400
+													and Something-Something-V2.
 												</p>
 											</div>
 										</div>
@@ -439,28 +635,38 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">EQAdap: Equipollent Domain Adaptation Approach to Image Deblurring</h4>
+												<h4 class="pubtitle">EQAdap: Equipollent Domain Adaptation Approach to
+													Image Deblurring</h4>
 												<div class="pubauthor">
-													Ibsa Jalata, Naga Venkata Sai Raviteja Chappa, <strong>Thanh-Dat Truong</strong>, Pierce Helton, Chase Rainwater, Khoa Luu
+													Ibsa Jalata, Naga Venkata Sai Raviteja Chappa, <strong>Thanh-Dat
+														Truong</strong>, Pierce Helton, Chase Rainwater, Khoa Luu
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Journal Paper</span>
 													IEEE Access
-													 
+
 												</div>
 											</div>
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													In this paper, we present an end-to-end unsupervised domain adaptation approach to image deblurring. 
-													This work focuses on learning and generalizing the complex latent space of the source domain and 
-													transferring the extracted information to the unlabeled target domain. 
-													While fully supervised image deblurring methods have achieved high accuracy on 
-													large-scale vision datasets, they are unable to well generalize well on a new test environment 
-													or a new domain. Therefore, in this work, we introduce a novel Bijective Maximum Likelihood loss 
-													for the unsupervised domain adaptation approach to image deblurring. 
-													We evaluate our proposed method on GoPro, RealBlur_J, RealBlur_R, and HIDE datasets. 
-													Through intensive experiments, we demonstrate our state-of-the-art performance on the standard benchmarks.
+													In this paper, we present an end-to-end unsupervised domain
+													adaptation approach to image deblurring.
+													This work focuses on learning and generalizing the complex latent
+													space of the source domain and
+													transferring the extracted information to the unlabeled target
+													domain.
+													While fully supervised image deblurring methods have achieved high
+													accuracy on
+													large-scale vision datasets, they are unable to well generalize well
+													on a new test environment
+													or a new domain. Therefore, in this work, we introduce a novel
+													Bijective Maximum Likelihood loss
+													for the unsupervised domain adaptation approach to image deblurring.
+													We evaluate our proposed method on GoPro, RealBlur_J, RealBlur_R,
+													and HIDE datasets.
+													Through intensive experiments, we demonstrate our state-of-the-art
+													performance on the standard benchmarks.
 												</p>
 											</div>
 										</div>
@@ -475,26 +681,39 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">BiMaL: Bijective Maximum Likelihood Approach to Domain Adaptation in Semantic Scene Segmentation</h4>
+												<h4 class="pubtitle">BiMaL: Bijective Maximum Likelihood Approach to
+													Domain Adaptation in Semantic Scene Segmentation</h4>
 												<div class="pubauthor">
-													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, Ngan Le, Son Lam Phung, Chase Rainwater, 
+													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, Ngan Le, Son Lam
+													Phung, Chase Rainwater,
 													and Khoa Luu
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Conference Paper</span>
-													The IEEE/CVF International Conference on Computer Vision (ICCV) 2021 
+													The IEEE/CVF International Conference on Computer Vision (ICCV) 2021
 												</div>
 											</div>
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													Semantic segmentation aims to predict pixel-level labels. It has become a popular task in various computer vision applications.
-													 While fully supervised segmentation methods have achieved high accuracy on large-scale vision datasets, they are unable to generalize 
-													 on a new testing environment or a new domain well. In this work, we first introduce a new Unaligned Domain Score to measure the efficiency 
-													 of a learned model on a new target domain in unsupervised manner. Then, we present the new Bijective Maximum Likelihood (BiMaL) loss that 
-													 is a generalized form of the Adversarial Entropy Minimization without any assumption about pixel independence. We have evaluated the proposed 
-													 BiMaL on two domains. The proposed BiMaL approach consistently outperforms the SOTA methods on empirical experiments on
-													  ``SYNTHIA to Cityscapes'', ``GTA5 to Cityscapes'', and ``SYNTHIA to Vistas''.
+													Semantic segmentation aims to predict pixel-level labels. It has
+													become a popular task in various computer vision applications.
+													While fully supervised segmentation methods have achieved high
+													accuracy on large-scale vision datasets, they are unable to
+													generalize
+													on a new testing environment or a new domain well. In this work, we
+													first introduce a new Unaligned Domain Score to measure the
+													efficiency
+													of a learned model on a new target domain in unsupervised manner.
+													Then, we present the new Bijective Maximum Likelihood (BiMaL) loss
+													that
+													is a generalized form of the Adversarial Entropy Minimization
+													without any assumption about pixel independence. We have evaluated
+													the proposed
+													BiMaL on two domains. The proposed BiMaL approach consistently
+													outperforms the SOTA methods on empirical experiments on
+													``SYNTHIA to Cityscapes'', ``GTA5 to Cityscapes'', and ``SYNTHIA to
+													Vistas''.
 												</p>
 											</div>
 										</div>
@@ -506,33 +725,49 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">The Right to Talk: An Audio-Visual Transformer Approach</h4>
+												<h4 class="pubtitle">The Right to Talk: An Audio-Visual Transformer
+													Approach</h4>
 												<div class="pubauthor">
-													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, The De Vu, Hoang Anh Pham, Bhiksha Raj, Ngan Le,
+													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, The De Vu, Hoang
+													Anh Pham, Bhiksha Raj, Ngan Le,
 													and Khoa Luu
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Conference Paper</span>
-													The IEEE/CVF International Conference on Computer Vision (ICCV) 2021 
+													The IEEE/CVF International Conference on Computer Vision (ICCV) 2021
 												</div>
 											</div>
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													Turn-taking has played an essential role in structuring the regulation of a conversation. The task of identifying
-													 the main speaker (who is properly taking his/her turn of speaking) and the interrupters (who are interrupting or 
-													 reacting to the main speaker’s utterances) remains a challenging task. Although some prior methods have partially 
-													 addressed this task, there still remain some limitations. Firstly, a direct association of Audio and Visual features may 
-													 limit the correlations to be extracted due to different modalities. Secondly, the relationship across temporal segments helping 
-													 to maintain the consistency of localization, separation and conversation contexts is not effectively exploited. 
-													 Finally, the interactions between speakers that usually contain the tracking and anticipatory decisions about 
-													 transition to a new speaker is usually ignored. Therefore, this work introduces a new Audio-Visual Transformer 
-													 approach to the problem of localization and highlighting the main speaker in both audio and visual channels of a 
-													 multi-speaker conversation video in the wild. The proposed method exploits different types of correlations presented 
-													 in both visual and audio signals. The temporal audio-visual relationships across spatial-temporal space are anticipated and 
-													 optimized via the self-attention mechanism in a Transformer structure. Moreover, a newly collected dataset is introduced for 
-													 the main speaker detection. To the best of our knowledge, it is one of the first studies that is able to automatically localize 
-													 and highlight the main speaker in both visual and audio channels in multi-speaker conversation videos.
+													Turn-taking has played an essential role in structuring the
+													regulation of a conversation. The task of identifying
+													the main speaker (who is properly taking his/her turn of speaking)
+													and the interrupters (who are interrupting or
+													reacting to the main speaker’s utterances) remains a challenging
+													task. Although some prior methods have partially
+													addressed this task, there still remain some limitations. Firstly, a
+													direct association of Audio and Visual features may
+													limit the correlations to be extracted due to different modalities.
+													Secondly, the relationship across temporal segments helping
+													to maintain the consistency of localization, separation and
+													conversation contexts is not effectively exploited.
+													Finally, the interactions between speakers that usually contain the
+													tracking and anticipatory decisions about
+													transition to a new speaker is usually ignored. Therefore, this work
+													introduces a new Audio-Visual Transformer
+													approach to the problem of localization and highlighting the main
+													speaker in both audio and visual channels of a
+													multi-speaker conversation video in the wild. The proposed method
+													exploits different types of correlations presented
+													in both visual and audio signals. The temporal audio-visual
+													relationships across spatial-temporal space are anticipated and
+													optimized via the self-attention mechanism in a Transformer
+													structure. Moreover, a newly collected dataset is introduced for
+													the main speaker detection. To the best of our knowledge, it is one
+													of the first studies that is able to automatically localize
+													and highlight the main speaker in both visual and audio channels in
+													multi-speaker conversation videos.
 												</p>
 											</div>
 										</div>
@@ -544,9 +779,11 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">Fast Flow Reconstruction via Robust Invertible n×n Convolution</h4>
+												<h4 class="pubtitle">Fast Flow Reconstruction via Robust Invertible n×n
+													Convolution</h4>
 												<div class="pubauthor">
-													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, Minh-Triet Tran, Ngan Le, 
+													<strong>Thanh-Dat Truong</strong>, Chi Nhan Duong, Minh-Triet Tran,
+													Ngan Le,
 													and Khoa Luu
 												</div>
 												<div class="pubcite">
@@ -557,16 +794,25 @@
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													Flow-based generative models have recently become one of the most efficient 
-													approaches to model data generation. Indeed, they are constructed with a 
-													sequence of invertible and tractable transformations. Glow first introduced 
-													a simple type of generative flow using an invertible convolution. 
-													However, the convolution suffers from limited flexibility compared to 
-													the standard convolutions. In this paper, we propose a novel invertible 
-													convolution approach that overcomes the limitations of the invertible convolution. 
-													In addition, our proposed network is not only tractable and invertible but also uses 
-													fewer parameters than standard convolutions. The experiments on CIFAR-10, ImageNet 
-													and Celeb-HQ datasets, have shown that our invertible convolution helps to improve 
+													Flow-based generative models have recently become one of the most
+													efficient
+													approaches to model data generation. Indeed, they are constructed
+													with a
+													sequence of invertible and tractable transformations. Glow first
+													introduced
+													a simple type of generative flow using an invertible convolution.
+													However, the convolution suffers from limited flexibility compared
+													to
+													the standard convolutions. In this paper, we propose a novel
+													invertible
+													convolution approach that overcomes the limitations of the
+													invertible convolution.
+													In addition, our proposed network is not only tractable and
+													invertible but also uses
+													fewer parameters than standard convolutions. The experiments on
+													CIFAR-10, ImageNet
+													and Celeb-HQ datasets, have shown that our invertible convolution
+													helps to improve
 													the performance of generative models significantly
 												</p>
 											</div>
@@ -579,9 +825,12 @@
 														<i class="fa fa-expand"></i>
 													</a>
 												</div>
-												<h4 class="pubtitle">Movement Analysis for Neurological and Musculoskeletal Disorders Using Graph Convolutional Neural Network</h4>
+												<h4 class="pubtitle">Movement Analysis for Neurological and
+													Musculoskeletal Disorders Using Graph Convolutional Neural Network
+												</h4>
 												<div class="pubauthor">
-													Ibsa K. Jalata, <strong>Thanh-Dat Truong</strong>, Jessica L. Allen, Han-Seok Seo, and Khoa Luu
+													Ibsa K. Jalata, <strong>Thanh-Dat Truong</strong>, Jessica L. Allen,
+													Han-Seok Seo, and Khoa Luu
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Journal Paper</span>
@@ -591,22 +840,37 @@
 											<div class="pubdetails">
 												<h4>Abstract</h4>
 												<p>
-													Using optical motion capture and wearable sensors is a common way to analyze impaired
-													 movement in individuals with neurological and musculoskeletal disorders. 
-													 However, using optical motion sensors and wearable sensors is expensive and 
-													 often requires highly trained professionals to identify specific impairments. 
-													 In this work, we proposed a graph convolutional neural network that mimics the 
-													 intuition of physical therapists to identify patient-specific impairments based 
-													 on video of a patient. In addition, two modeling approaches are compared: 
-													 a graph convolutional network applied solely on skeleton input data and 
-													 a graph convolutional network accompanied with a 1-dimensional convolutional neural network (1D-CNN). 
-													 Experiments on the dataset showed that the proposed method not only improves the 
-													 correlation of the predicted gait measure with the ground truth value 
-													 (speed = 0.791, gait deviation index (GDI) = 0.792) but also enables faster 
-													 training with fewer parameters. In conclusion, the proposed method shows that 
-													 the possibility of using video-based data to treat neurological and musculoskeletal disorders 
-													 with acceptable accuracy instead of depending on the expensive and labor-intensive 
-													 optical motion capture systems.
+													Using optical motion capture and wearable sensors is a common way to
+													analyze impaired
+													movement in individuals with neurological and musculoskeletal
+													disorders.
+													However, using optical motion sensors and wearable sensors is
+													expensive and
+													often requires highly trained professionals to identify specific
+													impairments.
+													In this work, we proposed a graph convolutional neural network that
+													mimics the
+													intuition of physical therapists to identify patient-specific
+													impairments based
+													on video of a patient. In addition, two modeling approaches are
+													compared:
+													a graph convolutional network applied solely on skeleton input data
+													and
+													a graph convolutional network accompanied with a 1-dimensional
+													convolutional neural network (1D-CNN).
+													Experiments on the dataset showed that the proposed method not only
+													improves the
+													correlation of the predicted gait measure with the ground truth
+													value
+													(speed = 0.791, gait deviation index (GDI) = 0.792) but also enables
+													faster
+													training with fewer parameters. In conclusion, the proposed method
+													shows that
+													the possibility of using video-based data to treat neurological and
+													musculoskeletal disorders
+													with acceptable accuracy instead of depending on the expensive and
+													labor-intensive
+													optical motion capture systems.
 												</p>
 											</div>
 										</div>
@@ -626,7 +890,8 @@
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Conference Paper</span>
-													The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2021
+													The IEEE/CVF Conference on Computer Vision and Pattern Recognition
+													(CVPR) 2021
 												</div>
 											</div>
 											<div class="pubdetails">
@@ -841,7 +1106,8 @@
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Conference Paper</span>
-													The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2020
+													The IEEE/CVF Conference on Computer Vision and Pattern Recognition
+													(CVPR) 2020
 												</div>
 											</div>
 											<div class="pubdetails">
@@ -895,7 +1161,8 @@
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Workshop Paper</span>
-													NVIDIA AI City Challenge Workshop within the IEEE/CVF Conference on Computer
+													NVIDIA AI City Challenge Workshop within the IEEE/CVF Conference on
+													Computer
 													Vision and Pattern Recognition 2019
 												</div>
 											</div>
@@ -1071,7 +1338,8 @@
 												</div>
 												<div class="pubcite">
 													<span class="label label-success">Workshop Paper</span>
-													NVIDIA AI City Challenge Workshop within the IEEE/CVF Conference on Computer
+													NVIDIA AI City Challenge Workshop within the IEEE/CVF Conference on
+													Computer
 													Vision and Pattern Recognition 2018
 												</div>
 											</div>
