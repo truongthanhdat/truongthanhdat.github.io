@@ -133,3 +133,13 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.scroll-container {
+            /* width: 300px; */
+            height: 300px;
+            /* border: 2px solid #000; */
+            /* margin: 20px; */
+            /* padding: 10px; */
+            overflow-x: scroll; /* Horizontal scroll */
+            overflow-y: scroll; /* Vertical scroll */
+}
